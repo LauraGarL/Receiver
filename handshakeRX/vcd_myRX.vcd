@@ -1,0 +1,172 @@
+$date
+     Oct 15, 2024       14:55:01
+$end
+
+$version
+ SystemC 2.3.4-Accellera --- Dec  4 2023 14:09:46
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    1  aaaaa  i_clock       $end
+$var wire    1  aaaab  i_reset       $end
+$var wire    1  aaaac  i_SoP       $end
+$var wire    1  aaaad  i_Req       $end
+$var wire    1  aaaae  i_fifo_full       $end
+$var wire    9  aaaaf  i_nFlit_to_rx [8:0]  $end
+$var wire    1  aaaag  i_ready_to_receive       $end
+$var wire    1  aaaah  o_OnOff       $end
+$var wire    1  aaaai  o_fifo_push       $end
+$var wire   32  aaaaj  state [31:0]  $end
+$var wire   32  aaaak  next_state [31:0]  $end
+$var wire    9  aaaal  count [8:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 1e-08 sec = 10000 timescale units.
+$end
+
+$dumpvars
+0aaaaa
+0aaaab
+0aaaac
+0aaaad
+0aaaae
+b110 aaaaf
+0aaaag
+0aaaah
+0aaaai
+b0 aaaaj
+b0 aaaak
+b0 aaaal
+$end
+
+#20000
+1aaaaa
+
+#30000
+0aaaaa
+
+#40000
+1aaaaa
+
+#50000
+0aaaaa
+1aaaab
+
+#60000
+1aaaaa
+
+#70000
+0aaaaa
+
+#80000
+1aaaaa
+
+#90000
+0aaaaa
+0aaaab
+1aaaag
+1aaaah
+b1 aaaak
+
+#100000
+1aaaaa
+b1 aaaaj
+
+#110000
+0aaaaa
+1aaaad
+0aaaag
+
+#120000
+1aaaaa
+
+#130000
+0aaaaa
+1aaaac
+0aaaah
+1aaaai
+b10 aaaak
+b110 aaaal
+
+#140000
+1aaaaa
+b10 aaaaj
+
+#150000
+0aaaaa
+0aaaac
+1aaaae
+0aaaai
+
+#160000
+1aaaaa
+
+#170000
+0aaaaa
+0aaaae
+1aaaah
+b11 aaaak
+
+#180000
+1aaaaa
+b11 aaaaj
+
+#190000
+0aaaaa
+
+#200000
+1aaaaa
+0aaaah
+1aaaai
+b10 aaaak
+b101 aaaal
+
+#210000
+0aaaaa
+
+#220000
+1aaaaa
+b10 aaaaj
+b100 aaaal
+
+#230000
+0aaaaa
+
+#240000
+1aaaaa
+1aaaah
+0aaaai
+b11 aaaak
+
+#250000
+0aaaaa
+
+#260000
+1aaaaa
+b11 aaaaj
+
+#270000
+0aaaaa
+
+#280000
+1aaaaa
+0aaaah
+1aaaai
+b10 aaaak
+b11 aaaal
+
+#290000
+0aaaaa
+
+#300000
+1aaaaa
+b10 aaaaj
+b10 aaaal
+
+#310000

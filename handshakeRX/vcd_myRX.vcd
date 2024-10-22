@@ -1,5 +1,5 @@
 $date
-     Oct 15, 2024       14:55:01
+     Oct 22, 2024       15:24:21
 $end
 
 $version
@@ -16,13 +16,12 @@ $var wire    1  aaaab  i_reset       $end
 $var wire    1  aaaac  i_SoP       $end
 $var wire    1  aaaad  i_Req       $end
 $var wire    1  aaaae  i_fifo_full       $end
-$var wire    9  aaaaf  i_nFlit_to_rx [8:0]  $end
+$var wire    8  aaaaf  i_fifo_dataOut [7:0]  $end
 $var wire    1  aaaag  i_ready_to_receive       $end
 $var wire    1  aaaah  o_OnOff       $end
 $var wire    1  aaaai  o_fifo_push       $end
 $var wire   32  aaaaj  state [31:0]  $end
-$var wire   32  aaaak  next_state [31:0]  $end
-$var wire    9  aaaal  count [8:0]  $end
+$var wire    9  aaaak  count [8:0]  $end
 $upscope $end
 $enddefinitions  $end
 
@@ -42,7 +41,6 @@ b110 aaaaf
 0aaaai
 b0 aaaaj
 b0 aaaak
-b0 aaaal
 $end
 
 #20000
@@ -71,8 +69,6 @@ $end
 0aaaaa
 0aaaab
 1aaaag
-1aaaah
-b1 aaaak
 
 #100000
 1aaaaa
@@ -85,14 +81,11 @@ b1 aaaaj
 
 #120000
 1aaaaa
+1aaaah
 
 #130000
 0aaaaa
 1aaaac
-0aaaah
-1aaaai
-b10 aaaak
-b110 aaaal
 
 #140000
 1aaaaa
@@ -102,16 +95,17 @@ b10 aaaaj
 0aaaaa
 0aaaac
 1aaaae
-0aaaai
 
 #160000
 1aaaaa
+0aaaah
+1aaaai
+b111 aaaak
 
 #170000
 0aaaaa
+0aaaad
 0aaaae
-1aaaah
-b11 aaaak
 
 #180000
 1aaaaa
@@ -119,54 +113,262 @@ b11 aaaaj
 
 #190000
 0aaaaa
+1aaaad
 
 #200000
 1aaaaa
-0aaaah
-1aaaai
-b10 aaaak
-b101 aaaal
+1aaaah
+0aaaai
+b100 aaaaj
 
 #210000
 0aaaaa
 
 #220000
 1aaaaa
-b10 aaaaj
-b100 aaaal
+0aaaah
+1aaaai
+b11 aaaaj
+b110 aaaak
 
 #230000
 0aaaaa
+b1 aaaaf
 
 #240000
 1aaaaa
 1aaaah
 0aaaai
-b11 aaaak
+b100 aaaaj
 
 #250000
 0aaaaa
 
 #260000
 1aaaaa
+0aaaah
+1aaaai
 b11 aaaaj
+b101 aaaak
 
 #270000
 0aaaaa
+b10 aaaaf
 
 #280000
 1aaaaa
-0aaaah
-1aaaai
-b10 aaaak
-b11 aaaal
+1aaaah
+0aaaai
+b100 aaaaj
 
 #290000
 0aaaaa
 
 #300000
 1aaaaa
-b10 aaaaj
-b10 aaaal
+0aaaah
+1aaaai
+b11 aaaaj
+b100 aaaak
 
 #310000
+0aaaaa
+b11 aaaaf
+
+#320000
+1aaaaa
+1aaaah
+0aaaai
+b100 aaaaj
+
+#330000
+0aaaaa
+
+#340000
+1aaaaa
+0aaaah
+1aaaai
+b11 aaaaj
+b11 aaaak
+
+#350000
+0aaaaa
+b100 aaaaf
+
+#360000
+1aaaaa
+1aaaah
+0aaaai
+b100 aaaaj
+
+#370000
+0aaaaa
+
+#380000
+1aaaaa
+0aaaah
+1aaaai
+b11 aaaaj
+b10 aaaak
+
+#390000
+0aaaaa
+b101 aaaaf
+
+#400000
+1aaaaa
+1aaaah
+0aaaai
+b100 aaaaj
+
+#410000
+0aaaaa
+
+#420000
+1aaaaa
+0aaaah
+1aaaai
+b11 aaaaj
+b1 aaaak
+
+#430000
+0aaaaa
+b110 aaaaf
+
+#440000
+1aaaaa
+1aaaah
+0aaaai
+b100 aaaaj
+
+#450000
+0aaaaa
+
+#460000
+1aaaaa
+0aaaah
+1aaaai
+b11 aaaaj
+b0 aaaak
+
+#470000
+0aaaaa
+b111 aaaaf
+
+#480000
+1aaaaa
+1aaaah
+0aaaai
+b1 aaaaj
+
+#490000
+0aaaaa
+
+#500000
+1aaaaa
+
+#510000
+0aaaaa
+b1000 aaaaf
+
+#520000
+1aaaaa
+
+#530000
+0aaaaa
+
+#540000
+1aaaaa
+
+#550000
+0aaaaa
+b1001 aaaaf
+
+#560000
+1aaaaa
+
+#570000
+0aaaaa
+
+#580000
+1aaaaa
+
+#590000
+0aaaaa
+b1010 aaaaf
+
+#600000
+1aaaaa
+
+#610000
+0aaaaa
+
+#620000
+1aaaaa
+
+#630000
+0aaaaa
+b1011 aaaaf
+
+#640000
+1aaaaa
+
+#650000
+0aaaaa
+
+#660000
+1aaaaa
+
+#670000
+0aaaaa
+b1100 aaaaf
+
+#680000
+1aaaaa
+
+#690000
+0aaaaa
+
+#700000
+1aaaaa
+
+#710000
+0aaaaa
+b1101 aaaaf
+
+#720000
+1aaaaa
+
+#730000
+0aaaaa
+
+#740000
+1aaaaa
+
+#750000
+0aaaaa
+b1110 aaaaf
+
+#760000
+1aaaaa
+
+#770000
+0aaaaa
+
+#780000
+1aaaaa
+
+#790000
+0aaaaa
+b1111 aaaaf
+
+#800000
+1aaaaa
+
+#810000
+0aaaaa
+
+#820000
+1aaaaa
+
+#830000
